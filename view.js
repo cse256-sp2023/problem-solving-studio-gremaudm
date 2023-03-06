@@ -71,4 +71,7 @@ $('.permbutton').click( function( e ) {
 
 
 // ---- Assign unique ids to everything that doesn't have an ID ----
-$('#html-loc').find('*').uniqueId() 
+$('#html-loc').find('*').uniqueId()
+
+var accountPermissions = define_new_effective_permissions(uniquePermission, true)
+$('#sidepanel').append(accountPermissions)
